@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salar Salehi - London</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+            padding: 60px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+
+        /* عنوان LONDON - وسط چین */
+        .london-title {
+            font-size: 72px;
+            font-weight: normal;
+            text-align: center;
+            letter-spacing: 0.05em;
+            margin-bottom: 80px;
+            line-height: 1;
+        }
+
+        /* خط اصلی "I AM SALAR SALEHI;" */
+        .name-line {
+            font-size: 30px;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 60px;
+            font-weight: normal;
+        }
+
+        /* استایل اصلی برای پاراگراف‌های بدنۀ متن */
+        .body-paragraph {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        /* پاراگراف‌های دارای تورفتگی */
+        .indented {
+            padding-left: 40px;
+        }
+
+        /* خط پایانی - راست چین */
+        .final-line {
+            text-align: right;
+            font-size: 18px;
+            margin-top: 80px;
+            position: relative;
+        }
+
+        /* خط جداکنندۀ نازک بالای خط پایانی */
+        .final-line::before {
+            content: '';
+            position: absolute;
+            top: -40px;
+            right: 0;
+            width: 120px;
+            height: 1px;
+            background-color: #000;
+        }
+
+        /* تنظیمات برای صفحه‌های موبایل */
+        @media (max-width: 768px) {
+            body {
+                padding: 40px 20px;
+                font-size: 16px;
+            }
+
+            .london-title {
+                font-size: 48px;
+                margin-bottom: 50px;
+            }
+
+            .name-line {
+                font-size: 24px;
+                margin-bottom: 40px;
+            }
+
+            .indented {
+                padding-left: 20px;
+            }
+
+            .final-line {
+                margin-top: 60px;
+            }
+
+            .final-line::before {
+                width: 80px;
+                top: -30px;
+            }
+        }
+
+        /* تنظیمات برای صفحه‌های خیلی کوچک */
+        @media (max-width: 480px) {
+            .london-title {
+                font-size: 36px;
+            }
+
+            .name-line {
+                font-size: 20px;
+            }
+
+            body {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="london-title">LONDON</h1>
+    <p class="name-line">I AM SALAR SALEHI;</p>
+    <p class="body-paragraph">AN IRANIAN CITIZEN INTERESTED IN THE DEVELOPMENT OF IRAN, WITH ECONOMICS,</p>
+    <p class="body-paragraph indented">INVESTMENT, AND BUSINESS DEVELOPMENT BEING MY PROFESSIONAL EXPERTISE</p>
+    <p class="body-paragraph">BUT I HAVE ALSO BEEN A SERIOUS FAN OF ART, POLITICS,AND SOCIAL ISSUES FOR</p>
+    <p class="body-paragraph indented">MANY YEARS. THIS IS A SPACE TO GATHER MY VIEWS AND OPINIONS, AND AN</p>
+    <p class="body-paragraph final-line">ENVIRONMENT TO INVITE RATIONALITY</p>
+</body>
+</html>
