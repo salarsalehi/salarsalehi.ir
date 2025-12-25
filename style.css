@@ -11,73 +11,74 @@ html, body {
   color: #fff;
 }
 
-/* HERO BACKGROUND */
+/* HERO */
 .hero {
   position: relative;
-  width: 100%;
-  height: 100vh;
-  background: url("WallpaperDog-20366392.jpg") center center / cover no-repeat;
+  min-height: 100vh;
+  background: url("city.jpg") center center / cover no-repeat;
   overflow: hidden;
 }
 
-/* DARK OVERLAY */
+/* GRADIENT OVERLAY (خیلی مهم) */
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.65);
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0.85) 0%,
+    rgba(0,0,0,0.6) 40%,
+    rgba(0,0,0,0.35) 70%,
+    rgba(0,0,0,0.15) 100%
+  );
   z-index: 1;
 }
 
-/* PROFILE IMAGE */
-.profile {
-  position: absolute;
-  left: 80px;
-  top: 50%;
-  transform: translateY(-50%);
+/* CONTAINER */
+.container {
+  position: relative;
   z-index: 2;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  align-items: center;
+  gap: 80px;
+  height: 100vh;
+  padding: 0 80px;
 }
 
+/* PROFILE */
 .profile img {
-  width: 360px;
-  height: 500px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
   border-radius: 14px;
   filter: grayscale(100%);
   box-shadow: 0 0 60px rgba(255,255,255,0.08);
 }
 
-/* TEXT CONTENT */
+/* CONTENT */
 .content {
-  position: absolute;
-  left: 520px;
-  top: 50%;
-  transform: translateY(-50%);
-  max-width: 700px;
-  z-index: 2;
+  max-width: 720px;
 }
 
 .content h1 {
-  font-size: 40px;
+  font-size: 42px;
   letter-spacing: 1.5px;
   margin-bottom: 32px;
 }
 
 .content p {
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 1.85;
   margin-bottom: 18px;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  .profile img {
-    width: 300px;
-    height: 420px;
-  }
-
-  .content {
-    left: 440px;
+  .container {
+    grid-template-columns: 320px 1fr;
+    gap: 50px;
+    padding: 0 40px;
   }
 
   .content h1 {
@@ -86,26 +87,18 @@ html, body {
 }
 
 @media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 80px 30px;
+    text-align: center;
+  }
+
   .profile {
-    position: relative;
-    left: auto;
-    top: auto;
-    transform: none;
-    margin: 40px auto 20px;
-    text-align: center;
+    margin-bottom: 40px;
   }
 
-  .profile img {
-    width: 260px;
-    height: 360px;
-  }
-
-  .content {
-    position: relative;
-    left: auto;
-    top: auto;
-    transform: none;
-    padding: 0 30px;
-    text-align: center;
+  .overlay {
+    background: rgba(0,0,0,0.75);
   }
 }
