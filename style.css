@@ -60,7 +60,7 @@ html, body {
 .content {
   max-width: 720px;
   margin-bottom: 10px; /* اضافه شد برای پایین‌تر آوردن متن */
-  margin-left: 200px; /* فاصله از سمت چپ اضافه شد */
+  margin-left: 1300px; /* فاصله از سمت چپ اضافه شد */
 }
 
 .content h1 {
