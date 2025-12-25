@@ -48,7 +48,7 @@ html, body {
 /* PROFILE */
 .profile img {
   width: 100%;
-  max-width: 420px; /* قبلا 380px بود */
+  max-width: 520px; /* قبلا 380px بود */
   height: auto;
   border-radius: 14px;
   filter: grayscale(100%);
