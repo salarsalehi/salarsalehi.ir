@@ -47,8 +47,8 @@ html, body {
 
 /* PROFILE */
 .profile img {
-  width: 200%;
-  max-width: 720px; /* قبلا 380px بود */
+  width: 100%;
+  max-width: 670px; /* قبلا 380px بود */
   height: auto;
   border-radius: 14px;
   filter: grayscale(100%);
@@ -69,7 +69,7 @@ html, body {
 }
 
 .content p {
-  font-size: 20px; /* قبلا 18px بود */
+  font-size: 30px; /* قبلا 18px بود */
   line-height: 1.9;
   margin-bottom: 10px;
   opacity: 0.95;
