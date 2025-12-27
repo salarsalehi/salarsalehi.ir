@@ -47,7 +47,7 @@ html, body {
 
 /* PROFILE */
 .profile img {
-  width: 155%;
+  width: 100%;
   max-width: 660px; /* قبلا 380px بود */
   height: auto;
   border-radius: 14px;
