@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>سالار صالحی | Salar Salehi</title>
+  <title>صفحه درست</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -17,7 +15,6 @@
       font-family: sans-serif;
     }
 
-    /* دسکتاپ */
     .page {
       height: 100vh;
       display: flex;
@@ -49,6 +46,9 @@
     .image-box img {
       max-width: 100%;
       max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
       border-radius: 16px;
       filter: grayscale(100%);
     }
@@ -63,7 +63,6 @@
       color: #ccc;
     }
 
-    /* موبایل */
     @media (max-width: 768px) {
       .page {
         height: auto;
@@ -74,11 +73,6 @@
       .frame {
         flex-direction: column;
         height: auto;
-        gap: 24px;
-      }
-
-      .image-box img {
-        max-height: none;
       }
     }
   </style>
@@ -89,15 +83,13 @@
     <div class="frame">
 
       <div class="image-box">
-        <img src="profile.png" alt="تصویر">
+        <img src="image.jpg" alt="تصویر">
       </div>
 
       <div class="text-box">
         <h1>عنوان اینجاست</h1>
         <p>
-          این متن هرچقدر هم طولانی باشه،  
-          روی موبایل کامل دیده می‌شه  
-          و روی دسکتاپ صفحه تکون نمی‌خوره.
+          تصویر هیچ‌وقت نصفه نمی‌شود و همیشه داخل قاب اسکیل می‌شود.
         </p>
       </div>
 
