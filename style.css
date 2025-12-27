@@ -47,7 +47,7 @@ html, body {
 
 /* PROFILE */
 .profile img {
-  width: 155%;
+  width: 100%;
   max-width: 660px; /* قبلا 380px بود */
   height: auto;
   border-radius: 14px;
@@ -64,13 +64,13 @@ html, body {
 }
 
 .content h1 {
-  font-size: 48px; /* قبلا 42px بود */
+  font-size: 40px; /* قبلا 42px بود */
   letter-spacing: 1.5px;
   margin-bottom: 20px;
 }
 
 .content p {
-  font-size: 30px; /* قبلا 18px بود */
+  font-size: 24px; /* قبلا 18px بود */
   line-height: 1.9;
   opacity: 0.95;
   
