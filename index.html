@@ -8,34 +8,44 @@
   <style>
     body {
       margin: 0;
+      height: 100vh;
+      overflow: hidden;
       background-color: #000;
       color: #fff;
       font-family: sans-serif;
     }
 
     .container {
+      height: 100%;
       display: flex;
-      min-height: 100vh;
-      padding: 40px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .frame {
+      width: 90%;
+      max-width: 1200px;
+      height: 80%;
+      display: flex;
       gap: 40px;
       align-items: center;
     }
 
-    .image-box {
+    .image-box,
+    .text-box {
       flex: 1;
+    }
+
+    .image-box {
       display: flex;
       justify-content: center;
     }
 
     .image-box img {
+      max-height: 100%;
       max-width: 100%;
-      height: auto;
       border-radius: 16px;
       filter: grayscale(100%);
-    }
-
-    .text-box {
-      flex: 1;
     }
 
     .text-box h1 {
@@ -48,10 +58,10 @@
       color: #ccc;
     }
 
-    /* موبایل */
     @media (max-width: 768px) {
-      .container {
+      .frame {
         flex-direction: column;
+        height: 100%;
         text-align: center;
       }
     }
@@ -60,20 +70,20 @@
 <body>
 
   <div class="container">
+    <div class="frame">
 
-    <!-- عکس -->
-    <div class="image-box">
-      <img src="profile.png" alt="سالار صالحی">
+      <div class="image-box">
+        <img src="profile.png" alt="سالار صالحی">
+      </div>
+
+      <div class="text-box">
+        <h1>من سالار صالحی</h1>
+        <p>
+         یک شهروند ایرانی علاقمند به توسعه ایران هستم که اقتصاد، سرمایه‌گذاری و توسعه‌ی کسب‌وکار تخصص حرفه‌ای من است، اما سال‌هاست که علاقمند جدی هنر، سیاست و موضوعات اجتماعی نیز هستم. اینجا فضایی است برای جمع‌آوری دیدگاه‌ها و نظراتم و محیطی است برای دعوت به عقلانیت.
+        </p>
+      </div>
+
     </div>
-
-    <!-- متن -->
-    <div class="text-box">
-      <h1>من سالار صالحی</h1>
-      <p>
-یک شهروند ایرانی علاقمند به توسعه ایران هستم که اقتصاد، سرمایه‌گذاری و توسعه‌ی کسب‌وکار تخصص حرفه‌ای من است، اما سال‌هاست که علاقمند جدی هنر، سیاست و موضوعات اجتماعی نیز هستم. اینجا فضایی است برای جمع‌آوری دیدگاه‌ها و نظراتم و محیطی است برای دعوت به عقلانیت.
-      </p>
-    </div>
-
   </div>
 
 </body>
