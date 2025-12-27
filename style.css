@@ -48,7 +48,7 @@ html, body {
 /* PROFILE */
 .profile img {
   width: 100%;
-  max-width: 660px; /* قبلا 380px بود */
+  max-width: 500px; /* قبلا 380px بود */
   height: auto;
   border-radius: 14px;
   filter: grayscale(100%);
@@ -59,7 +59,7 @@ html, body {
 /* CONTENT */
 .content {
   max-width: 820px;
-  margin-top: 400px; /* اضافه شد برای پایین‌تر آوردن متن */
+  margin-top: 200px; /* اضافه شد برای پایین‌تر آوردن متن */
   margin-left: 200px; /* فاصله از سمت چپ اضافه شد */
 }
 
