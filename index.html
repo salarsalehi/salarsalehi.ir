@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>سالار صالحی - صفحه اصلی</title>
+  <title>[نام شما]</title>
   
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap');
@@ -64,8 +64,8 @@
 
       .cta-button {
         display: inline-block;
-        padding: 0.8rem 2rem;          /* اندازه کوچک‌تر مثل سری اول */
-        font-size: 1.1rem;             /* فونت کوچکتر و جمع‌وجور */
+        padding: 0.8rem 1.8rem;           /* اندازه ثابت و کوتاه */
+        font-size: 1.1rem;
         font-weight: 600;
         color: white;
         background: linear-gradient(90deg, #7c3aed, #3b82f6);
@@ -74,6 +74,8 @@
         text-decoration: none;
         transition: all 0.3s ease;
         box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+        width: fit-content;               /* ← مهم: عرض فقط به اندازه محتوای خودش */
+        align-self: flex-start;           /* ← مهم: از چسبیدن به متن جلوگیری می‌کنه */
       }
 
       .cta-button:hover {
@@ -156,8 +158,8 @@
       }
 
       .cta-button {
-        padding: 0.8rem 2rem;          /* اندازه کوچک‌تر مثل سری اول */
-        font-size: 1.1rem;             /* فونت کوچکتر و جمع‌وجور */
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
         font-weight: 600;
         color: white;
         background: linear-gradient(90deg, #7c3aed, #3b82f6);
@@ -193,14 +195,14 @@
       </div>
 
       <div class="image-wrapper">
-        <img src="profile.png" 
-             alt="سالار صالحی">
+        <img src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=1400" 
+             alt="تصویر پروفایل">
       </div>
 
       <!-- موبایل: چیدمان عمودی با عکس دایره‌ای -->
       <div class="profile-wrapper">
-        <img src="profile.png" 
-             class="profile-image" alt="سالار صالحی">
+        <img src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=1400" 
+             class="profile-image" alt="تصویر پروفایل">
         
         <div class="text-section">
           <h2>سلام، من [نام شما] هستم</h2>
@@ -218,7 +220,7 @@
     </div>
   </div>
 
-  <!-- نمایش شرطی درست -->
+  <!-- نمایش شرطی -->
   <style>
     @media (max-width: 1024px) {
       .content > .text-section,
